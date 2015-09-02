@@ -1,0 +1,63 @@
+.background-img {
+  background-image: image-url("office-meeting.jpg");
+  width: 1000px;
+  height: 500px;
+}
+
+.color-overlay {
+  background: rgba(58, 141, 125, 0.50);
+  height: 100%;
+  z-index: 2;
+}
+
+.info-box {
+  position: absolute;
+  bottom: 130px;
+  width: 100%;
+}
+
+.title-one {
+  font-family: 'Apple Symbols';
+  font-weight: 400;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.title-two {
+  font-family: 'Avenir';
+  font-style: italic;
+  color: #ffffff;
+  font-size: 55px;
+}
+
+.cta-one {
+  margin-top: 45px;
+}
+
+.menu-toggle-box {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  background: rgba(99, 191, 95, 1);
+  font-size: 30px;
+  color: #ffffff;
+  width: 50px;
+  padding-left: 9px;
+  padding-top: 5px;
+}
+
+#navmenu {
+    background: rgba(48, 48, 48, 1);
+    height: 500px;
+    display: block;
+    position: fixed;
+    width: 235px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+#pagebody {
+  position: relative;
+  left: 0px;
+}

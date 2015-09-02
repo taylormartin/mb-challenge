@@ -1,0 +1,43 @@
+#navmenu
+  div 
+    | Menu Links
+  ul
+    li
+      a.navlink Home
+    li
+      a.navlink About Us
+    li
+      a.navlink Advertise
+    li
+      a.navlink Write for Us
+    li
+      a.navlink Contacts
+    li
+      a.navlink Privacy Policy
+#pagebody
+  .row
+    .col-sm-12
+      .menu-toggle-box
+        #menu-btn.glyphicon.glyphicon-menu-hamburger
+      #carousel-example-generic.carousel.slide data-ride="carousel" 
+        ol.carousel-indicators
+          li.active data-slide-to="0" data-target="#carousel-example-generic" 
+          li data-slide-to="1" data-target="#carousel-example-generic" 
+          li data-slide-to="2" data-target="#carousel-example-generic" 
+        .carousel-inner role="listbox" 
+          .item.active
+            .background-img
+              .color-overlay
+                .info-box.text-center
+                  .title-one READY TO TAKE THE NEXT STEP IN YOUR CAREER?
+                  .title-two We Can Help.
+                  .btn.btn-primary.cta-one SEE WHAT EMPLOYERS WANT
+  .row
+    .col-sm-6
+      | Looking for a job?
+    .col-sm-6
+      | Just Browsing?
+  .row
+    /! one of these columns below will always be active
+    .col-sm-12
+    .col-sm-12
