@@ -30,6 +30,52 @@
   font-size: 55px;
 }
 
+.menu-category {
+  height: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(84, 84, 84, 1);
+
+  &:hover {
+   background-color: rgba(84, 84, 84, 1);
+  }
+}
+
+.menu-list {
+  color: #ffffff;
+}
+
+.menu-subtitle {
+  display: inline;
+}
+
+.subtitle-details {
+  display: none;
+}
+
+.subtitle-details-text {
+  height: 35px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 12px;
+  background-color: rgba(84, 84, 84, 1);
+
+  &:hover {
+    background-color: rgba(112, 112, 112, 1);
+  }
+}
+
+.menu-title {
+  background-color: rgba(99, 191, 95, 1);
+  height: 60px;
+  color: #ffffff;
+  font-family: 'Avenir';
+  padding-top: 15px;
+  font-size: 25px;
+}
+
 .cta-one {
   margin-top: 45px;
 }
@@ -44,20 +90,79 @@
   width: 50px;
   padding-left: 9px;
   padding-top: 5px;
+
+  &:hover {
+    background-color: rgba(73, 199, 56, 1);
+  }
 }
 
 #navmenu {
     background: rgba(48, 48, 48, 1);
-    height: 500px;
+    height: 674px;
     display: block;
     position: fixed;
     width: 235px;
     left: 0px;
     top: 0px;
-    z-index: -1;
+    z-index: 0;
 }
 
 #pagebody {
   position: relative;
   left: 0px;
 }
+
+.tab-div {
+  height: 105px;
+  font-family: 'Avenir';
+  font-size: 32px;
+  padding-top: 20px;
+  border-top: 2px solid;
+}
+
+.tab-selected {
+  background: rgba(48, 48, 48, 1);
+  color: #ffffff;
+}
+
+.tab-unselected {
+  background-color: rgba(84, 84, 84, 1);
+  color: #8c8c8c;
+}
+
+.tab-div-sub {
+  font-size: 12px;
+}
+
+.search-div {
+  background: rgba(48, 48, 48, 1);
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+input {
+  background: rgba(48, 48, 48, 1);
+  border: 2px solid rgba(84, 84, 84, 1);
+  border-radius: 4px;
+  height: 38px;
+}
+
+input, select, textarea{
+  color: #ffffff;
+}
+
+textarea:focus, input:focus {
+  color: #ffffff;
+}
+
+.search-term {
+  width: 30%;
+  margin-right: 15px;
+  padding-left: 5px;
+}
+
+.location {
+  width: 18%;
+  margin-right: 15px;
+  padding-left: 5px;
+} 

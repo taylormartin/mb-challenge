@@ -17,9 +17,12 @@
 
 $(document).ready(function(){
   var pagebody = $("#pagebody");
+  var menubtn = $("#menu-btn");
 
   function openme() { 
       $(function () {
+        menubtn.removeClass('glyphicon-menu-hamburger');
+        menubtn.addClass('glyphicon-remove');
         pagebody.animate({
           left: "235px"
         }, { duration: 300, queue: false });
@@ -28,13 +31,21 @@ $(document).ready(function(){
    
   function closeme() {
       var closeme = $(function() {
+        menubtn.addClass('glyphicon-menu-hamburger');
+        menubtn.removeClass('glyphicon-remove');
         pagebody.animate({
           left: "0px"
         }, { duration: 180, queue: false });
       });
   }
+  
+  $(".menu-category").on("click", function(e){
+    var num = $(this).attr('data-sub-menu');
+    $("#sub-menu-" + num).toggle();
+    $("#glyph-" + num).toggleClass("glyphicon-menu-down glyphicon-menu-up");
+  });
 
-	$("#menu-btn").on("click", function(e){
+	$(menubtn).on("click", function(e){
 		e.preventDefault();
 		var leftval = pagebody.css('left');
 		

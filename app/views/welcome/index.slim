@@ -1,19 +1,30 @@
 #navmenu
-  div 
-    | Menu Links
-  ul
-    li
-      a.navlink Home
-    li
-      a.navlink About Us
-    li
-      a.navlink Advertise
-    li
-      a.navlink Write for Us
-    li
-      a.navlink Contacts
-    li
-      a.navlink Privacy Policy
+  .menu-title.text-center
+    | Menu
+  .menu-list
+    .menu-category
+      .menu-subtitle CANDIDATES
+      span.pull-right.glyphicon.glyphicon-menu-down
+    .menu-category data-sub-menu="2"
+      .menu-subtitle EMPLOYERS
+      span.pull-right.glyphicon.glyphicon-menu-down#glyph-2
+    .subtitle-details#sub-menu-2
+      .subtitle-details-text Overview
+      .subtitle-details-text Information Technology
+      .subtitle-details-text Sales & Marketing
+      .subtitle-details-text Testimonials
+    .menu-category
+      .menu-subtitle ABOUT
+      span.pull-right.glyphicon.glyphicon-menu-down
+    .menu-category
+      .menu-subtitle EVENTS
+      span.pull-right.glyphicon.glyphicon-menu-down
+    .menu-category
+      .menu-subtitle INSIGHTS
+      span.pull-right.glyphicon.glyphicon-menu-down
+    .menu-category
+      .menu-subtitle CONTACT
+      span.pull-right.glyphicon.glyphicon-menu-down
 #pagebody
   .row
     .col-sm-12
@@ -32,12 +43,18 @@
                   .title-one READY TO TAKE THE NEXT STEP IN YOUR CAREER?
                   .title-two We Can Help.
                   .btn.btn-primary.cta-one SEE WHAT EMPLOYERS WANT
-  .row
-    .col-sm-6
-      | Looking for a job?
-    .col-sm-6
-      | Just Browsing?
-  .row
-    /! one of these columns below will always be active
-    .col-sm-12
-    .col-sm-12
+  .container-fluid
+    .row
+      .col-sm-6.tab-div.text-center.tab-selected
+        | Looking for a job?
+        .tab-div-sub Search for job listings now.
+      .col-sm-6.tab-div.text-center.tab-unselected
+        | Just Browsing?
+        .tab-div-sub Lets connect and we'll keep you posted.
+    .row
+      .col-sm-12.search-div.text-center
+        input.search-term type="text" placeholder="Search Term"
+        input.location type="text" placeholder="City, State, or Zip Code"
+        .btn.btn-primary SEARCH JOBS
+      .col-sm-12.search-div.text-center.hidden
+        .btn.btn-primary FILLER TEXT
