@@ -100,7 +100,7 @@
     background: rgba(48, 48, 48, 1);
     height: 674px;
     display: block;
-    position: fixed;
+    position: absolute;
     width: 235px;
     left: 0px;
     top: 0px;
@@ -166,3 +166,7 @@ textarea:focus, input:focus {
   margin-right: 15px;
   padding-left: 5px;
 } 
+
+.unselected {
+  display: none;
+}

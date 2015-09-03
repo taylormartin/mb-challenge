@@ -45,6 +45,17 @@ $(document).ready(function(){
     $("#glyph-" + num).toggleClass("glyphicon-menu-down glyphicon-menu-up");
   });
 
+  $(".tab-div").on("click", function(e){
+    var show = $(this).attr('data-show-tab');
+    var hide = $(this).attr('data-hide-tab');
+    $(this).addClass('tab-selected');
+    $(this).removeClass('tab-unselected');
+    $('#tab-' + hide).addClass('tab-unselected');
+    $('#tab-' + hide).removeClass('tab-selected');
+    $("#sub-tab-" + show).removeClass('unselected');
+    $("#sub-tab-" + hide).addClass('unselected');
+  });
+
 	$(menubtn).on("click", function(e){
 		e.preventDefault();
 		var leftval = pagebody.css('left');
@@ -58,3 +69,4 @@ $(document).ready(function(){
 	});
 
 });
+

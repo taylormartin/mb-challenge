@@ -43,18 +43,33 @@
                   .title-one READY TO TAKE THE NEXT STEP IN YOUR CAREER?
                   .title-two We Can Help.
                   .btn.btn-primary.cta-one SEE WHAT EMPLOYERS WANT
+          .item
+            .background-img
+              .color-overlay
+                .info-box.text-center
+                  .title-one LOREM IPSUM FILLER TEXT HERESUM
+                  .title-two Blah Blah Blah.
+                  .btn.btn-primary.cta-one CLICK THIS BUTTON
+          .item
+            .background-img
+              .color-overlay
+                .info-box.text-center
+                  .title-one THE PEOPLE IN THIS BACKGROUND ARE SUCCESSFUL
+                  .title-two Are you?
+                  .btn.btn-primary.cta-one SERIOUSLY! CLICK IT
   .container-fluid
     .row
-      .col-sm-6.tab-div.text-center.tab-selected
+      .col-sm-6.tab-div.text-center.tab-selected#tab-1 data-show-tab="1" data-hide-tab="2"
         | Looking for a job?
         .tab-div-sub Search for job listings now.
-      .col-sm-6.tab-div.text-center.tab-unselected
+      .col-sm-6.tab-div.text-center.tab-unselected#tab-2 data-show-tab="2" data-hide-tab="1"
         | Just Browsing?
         .tab-div-sub Lets connect and we'll keep you posted.
     .row
-      .col-sm-12.search-div.text-center
+      .col-sm-12.search-div.text-center#sub-tab-1
         input.search-term type="text" placeholder="Search Term"
         input.location type="text" placeholder="City, State, or Zip Code"
         .btn.btn-primary SEARCH JOBS
-      .col-sm-12.search-div.text-center.hidden
-        .btn.btn-primary FILLER TEXT
+      .col-sm-12.search-div.text-center.unselected#sub-tab-2
+        input.search-term type="text" placeholder="Email"
+        .btn.btn-primary SUBMIT 
